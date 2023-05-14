@@ -5,7 +5,7 @@ import { getPostBySlug } from 'lib/posts';
 export default function PostRedirect({ post }) {
   useEffect(() => {
     // Redirect to the WordPress domain URL with a 301 (permanent) status code
-    window.location.replace(`https://yourwordpressdomain.com/${post.slug}`, { status: 301 });
+    window.location.replace(`https://markmystories.com/${post.slug}`, { status: 301 });
   }, [post]);
 
   return (
