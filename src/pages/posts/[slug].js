@@ -21,8 +21,11 @@ export async function getServerSideProps({ params, res }) {
     };
   }
 
-  res.setHeader('Location', `https://markmystories.com/${post.slug}`);
+  res.setHeader('Location', `https://dailytrendings.info/${post.slug}`);
   res.statusCode = 301;
   res.end();
-}
 
+  return {
+    props: {},
+  };
+}
